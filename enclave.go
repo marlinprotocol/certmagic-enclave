@@ -23,18 +23,12 @@ type Enclave struct {
 	encryptionKey []byte
 
 	// Enclave
-	HostUrl        string          `json:"host_url"`
-	Pcrs           map[uint][]byte `json:"pcrs"`
-	MinCpus        uint64          `json:"min_cpus"`
-	MinMem         uint64          `json:"min_mem"`
-	MaxAge         int64           `json:"max_age"`
-	Bucket         string          `json:"bucket"`
-	AccessID       string          `json:"access_id"`
-	SecretKey      string          `json:"secret_key"`
-	Prefix         string          `json:"prefix"`
-	Insecure       bool            `json:"insecure"`
-	UseIamProvider bool            `json:"use_iam_provider"`
-	RootCertPem    []byte          `json:"root_cert_pem"`
+	HostUrl     string          `json:"host_url"`
+	Pcrs        map[uint][]byte `json:"pcrs"`
+	MinCpus     uint64          `json:"min_cpus"`
+	MinMem      uint64          `json:"min_mem"`
+	MaxAge      int64           `json:"max_age"`
+	RootCertPem []byte          `json:"root_cert_pem"`
 }
 
 type LoadResponse struct {
